@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Shoe Company</title>
     <link rel="stylesheet" href="output.css" />
+    <script src="script.js" defer></script>
   </head>
   <body class="bg-black text-white">
-    <header class="flex items-center justify-between fixed w-full left-[50%] -translate-x-[50%] section-container">
+    <header id="header" class="flex items-center justify-between fixed w-full left-[50%] -translate-x-[50%] section-container z-10 transition-all duration-300">
       <a href="/">
         <img class="w-24 md:w-32" src="images/logo.svg" alt="logo" />
         <p class="text-xs md:text-sm -mt-6 md:-mt-8">The Shoe Company</p>
@@ -27,12 +28,30 @@
           THE <br />SHOE <br />COMPANY
         </h1>
         <div>
-          <img class="w-[600px]" src="images/hero-image.png" alt="hero-image" />
+          <img class="w-full max-w-xl" src="images/hero-image.png" alt="hero-image" />
         </div>
       </div>
     </section>
-    <section id="how-it-works" class="section-container">
-        <h2 class="text-center text-3xl font-bold">Have they finally make the perfect workout shoe?</h2>
+    <section id="how-it-works" class="section-container pt-24">
+        <h2 class="text-center text-4xl font-bold max-w-md mx-auto pt-12 mb-24">Have they finally made the perfect workout shoe?</h2>
+        <div class="max-w-xl mx-auto pt-60 xl:pt-0 xl:mt-32 relative">
+          <img class="w-full max-w-2xl rotate-6 xl:rotate-0" src="images/how-it-works.png" alt="how-it-works">
+          <div class="max-w-[200px] xl:max-w-60 absolute top-36 -left-24 xl:left-0 xl:-top-10 xl:-translate-x-full">
+            <h3 class="text-2xl font-bold">THE HEEL</h3>
+            <p class="text-lg">The heel is well-built, has appropriate elevation and is not too rigid.</p>
+            <img class="w-32 xl:ml-auto max-w-[150px] rotate-45 xl:rotate-0" src="images/arrow-1.svg" alt="arrow-1">
+          </div>
+          <div class="max-w-[200px] xl:max-w-60 absolute top-0 xl:top-6 right-6 xl:-right-36">
+            <img class="w-32 xl:-ml-32 xl:-mb-16 max-w-[150px] translate-y-64 rotate-[125.23deg] xl:rotate-0 xl:translate-y-0" src="images/arrow-2.svg" alt="arrow-2">
+            <h3 class="text-2xl font-bold">THE FRONT</h3>
+            <p class="text-lg">The front is comfortable and adjusts well to the shape of your foot.</p>
+          </div>
+          <div class="max-w-[200px] xl:max-w-60 absolute bottom-0 -left-16">
+            <img class="ml-auto -mb-20 -mr-16 max-w-[150px]" src="images/arrow-3.svg" alt="arrow-3">
+            <h3 class="text-2xl font-bold">TRACTION</h3>
+            <p class="text-lg">The shoe has good traction and doesn't slip easily.</p>
+          </div>
+        </div>
     </section>
   </body>
 </html>
